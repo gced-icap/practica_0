@@ -1,20 +1,32 @@
 <html>
 <head>
-    <meta charset= "utf-8">
-    <title>ICAP: Test Page</title>
-    <script type="text/javascript">
-        function getURL() {
-            document.write("URL: " + window.location.href);
-        }
-    </script>
+<meta charset="UTF-8">
+<title>GCED ICAP</title>
+<script type="text/javascript">
+    var nome = "[Nome e apelidos da(o) alumna(o)]";
+    var curso = "XXXX/YYYY";
+
+    function getName() {
+      document.getElementById("name").innerHTML = nome;
+      document.getElementById("course").innerHTML = curso;
+    }
+    function getURL() {
+      document.write("URL: " + window.location.href);
+    }
+    function getTIME() {
+      document.getElementById("current_date").innerHTML = Date();
+    }
+</script>
 </head>
-    <body>
-	<div style="width:700px;height:150px;border:1px solid #000;text-align: center;">
-	<strong><br>
-	<u>GCED ICAP: 2021/2022</u>
-		<p><script>getURL();</script>
-		<br><br>Páxina web de [nome e apelidos da(o) alumna(o)] </p>
-	</strong>
-	</div>
-    </body>
+<body onload="getName()">
+<div style="width:650px;height:270px;border:3px solid #000;text-align: center;">
+<strong>
+	<h2><u>GCED ICAP: <span id="course"></span></u><h2>
+	<img src="https://gac.udc.es/~rober/icap/udc.png" style="max-width: 325px; width: auto;">
+	<h3><font color="red">Páxina web de <span id="name"></span></font></h3>
+	<script>getURL();</script>
+	<p><div id="current_date"><script>getTIME();</script></p>
+</strong>
+</div>
+</body>
 </html>
