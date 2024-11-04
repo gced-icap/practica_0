@@ -24,7 +24,7 @@
 <body onload="init()">
     <div class="container" style="text-align: center;">
       <div class="jumbotron">
-	<h2><u>GCED ICAP: <span id="course"></span></u><h2>
+	<h2><u>GCED ICAP: <span id="course"></span></u></h2>
 	<img src="img/udc.png" style="max-width: 325px; width: auto;">
       	<h3><font color="red">Páxina web de <span id="name"></span></font></h3>
 	<p><script>getURL();</script></p>
